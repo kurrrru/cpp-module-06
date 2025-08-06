@@ -1,4 +1,4 @@
-#include "ScalarConverter.hpp"
+#include <ex00/ScalarConverter.hpp>
 
 #include <iostream>
 #include <limits>
@@ -6,6 +6,9 @@
 #include <cerrno>
 #include <cmath>
 #include <cstdlib>
+
+#include <toolbox/stepmark.hpp>
+#include <toolbox/color.hpp>
 
 namespace {
 bool isChar(const std::string& input);

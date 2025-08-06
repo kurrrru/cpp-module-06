@@ -46,7 +46,6 @@ void logger::StepMark::setLogFile(const std::string& file) {
         instance._logFile.close();
     }
     instance._logFileName = file;
-    instance.openLogFile();
 }
 
 logger::StepMark& logger::StepMark::getInstance() {
