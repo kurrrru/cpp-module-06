@@ -72,7 +72,6 @@ ScalarConverter::Type ScalarConverter::detectType(const std::string& input) {
     return INVALID;
 }
 
-
 namespace {
 
 bool isChar(const std::string& input) {
