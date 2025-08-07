@@ -7,7 +7,7 @@
 #include <cmath>
 #include <cstdlib>
 
-#include <toolbox/stepmark.hpp>
+#include <toolbox/StepMark.hpp>
 #include <toolbox/color.hpp>
 
 namespace {

@@ -2,7 +2,7 @@
 #include <string>
 
 #include <ex00/ScalarConverter.hpp>
-#include <toolbox/stepmark.hpp>
+#include <toolbox/StepMark.hpp>
 #include <toolbox/color.hpp>
 
 int main(int argc, char *const *argv) {

@@ -10,7 +10,7 @@ The class uses a singleton pattern to ensure that only one instance of the logge
 The class is not thread-safe, so it should not be used in a multi-threaded environment.
 */
 
-#include <toolbox/stepmark.hpp>
+#include <toolbox/StepMark.hpp>
 
 #include <iostream>
 #include <ctime>
@@ -26,7 +26,7 @@ namespace toolbox {
  * @note The reason for not opening the log file in the constructor is to allow
  *       the user to set the log file name before opening it.
  */
-logger::StepMark::StepMark() : _level(INFO), _logFileName("stepmark.log") {
+logger::StepMark::StepMark() : _level(INFO), _logFileName("StepMark.log") {
 }
 
 logger::StepMark::~StepMark() {
@@ -129,8 +129,8 @@ void logger::StepMark::openLogFile() {
     _logFile.open(_logFileName.c_str(), std::ios::app);
     if (!_logFile.is_open()) {
         std::cerr << "Error opening log file: " << _logFileName
-            << ". Defaulting to stepmark.log." << std::endl;
-        _logFileName = "stepmark.log";
+            << ". Defaulting to StepMark.log." << std::endl;
+        _logFileName = "StepMark.log";
         _logFile.open(_logFileName.c_str(), std::ios::app);
     }
     if (_logFile.is_open()) {

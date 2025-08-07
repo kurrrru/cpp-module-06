@@ -1,6 +1,6 @@
 NAME = ScalarConverter
 # sources
-SRCS = main.cpp ScalarConverter.cpp ../toolbox/stepmark.cpp ../toolbox/color.cpp
+SRCS = main.cpp ScalarConverter.cpp ../toolbox/StepMark.cpp ../toolbox/color.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
