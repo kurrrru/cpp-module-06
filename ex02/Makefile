@@ -3,7 +3,9 @@ NAME = dynamic_cast
 # source files
 SRCS = main.cpp \
 		funcs.cpp \
-		Base.cpp
+		Base.cpp \
+		../toolbox/StepMark.cpp \
+		../toolbox/color.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 # compiler

@@ -3,7 +3,9 @@ NAME = Serializer
 # source files
 SRCS = main.cpp \
 		Data.cpp \
-		Serializer.cpp
+		Serializer.cpp \
+		../toolbox/StepMark.cpp \
+		../toolbox/color.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 # compiler

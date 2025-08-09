@@ -10,12 +10,14 @@ int main(int argc, char *const *argv) {
     toolbox::logger::StepMark::setLevel(toolbox::logger::INFO);
     if (argc != 2) {
         toolbox::logger::StepMark::error("Invalid number of arguments.");
-        std::cerr << "Usage: " << argv[0] << " <input>" << std::endl;
-        return 1;
+        std::cerr << toolbox::color::red << "Usage: " << argv[0] << " <value>"
+                << toolbox::color::reset
+                << std::endl;
+        return EXIT_FAILURE;
     }
 
     const std::string input = argv[1];
     ScalarConverter::convert(input);
 
-    return 0;
+    return EXIT_SUCCESS;
 }
