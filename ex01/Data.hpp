@@ -1,7 +1,7 @@
 #pragma once
 
 class Data {
-public:
+ public:
     Data();
     explicit Data(int value);
     Data(const Data& other);
@@ -10,6 +10,6 @@ public:
 
     int getValue() const;
 
-private:
+ private:
     int _value;
 };

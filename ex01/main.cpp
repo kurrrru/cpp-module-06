@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "Serializer.hpp"
-#include "Data.hpp"
+#include <ex01/Serializer.hpp>
+#include <ex01/Data.hpp>
 
 int main() {
     Data data(42);

@@ -2,14 +2,14 @@
 
 #include <stdint.h>
 
-#include "Data.hpp"
+#include <ex01/Data.hpp>
 
 class Serializer
 {
-public:
+ public:
     static uintptr_t serialize(Data* ptr);
     static Data* deserialize(uintptr_t raw);
-private:
+ private:
     Serializer();
     Serializer(const Serializer& other);
     Serializer& operator=(const Serializer& other);

@@ -1,4 +1,4 @@
-#include "Data.hpp"
+#include <ex01/Data.hpp>
 
 Data::Data() : _value(0) {
 }
