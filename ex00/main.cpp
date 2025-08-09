@@ -13,11 +13,11 @@ int main(int argc, char *const *argv) {
         std::cerr << toolbox::color::red << "Usage: " << argv[0] << " <value>"
                 << toolbox::color::reset
                 << std::endl;
-        return EXIT_FAILURE;
+        return 1;
     }
 
     const std::string input = argv[1];
     ScalarConverter::convert(input);
 
-    return EXIT_SUCCESS;
+    return 0;
 }
