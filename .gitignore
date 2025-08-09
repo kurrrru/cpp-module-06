@@ -6,3 +6,4 @@
 # Executable files
 dynamic_cast
 Serializer
+ScalarConverter
