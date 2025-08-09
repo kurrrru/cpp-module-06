@@ -87,4 +87,4 @@ unsigned long xorshift32() {
     state &= 0xFFFFFFFF;
     return state;
 }
-}
+}  // namespace
