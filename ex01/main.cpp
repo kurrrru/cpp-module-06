@@ -11,7 +11,8 @@ int main() {
     std::cout << "Serialized Data pointer: " << raw << std::endl;
 
     Data* deserializedData = Serializer::deserialize(raw);
-    std::cout << "Deserialized Data value: " << deserializedData->getValue() << std::endl;
+    std::cout << "Deserialized Data value: "
+        << deserializedData->getValue() << std::endl;
 
     return 0;
 }

@@ -10,12 +10,12 @@
 #include <ex02/Base.hpp>
 
 namespace {
-    Base* createA();
-    Base* createB();
-    Base* createC();
+Base* createA();
+Base* createB();
+Base* createC();
 
-    unsigned long xorshift32();
-}
+unsigned long xorshift32();
+}  // namespace
 
 
 Base* generate(void) {
@@ -64,27 +64,27 @@ void identify(Base& p) {
 }
 
 namespace {
-    Base* createA() {
-        return new A();
-    }
+Base* createA() {
+    return new A();
+}
 
-    Base* createB() {
-        return new B();
-    }
+Base* createB() {
+    return new B();
+}
 
-    Base* createC() {
-        return new C();
-    }
+Base* createC() {
+    return new C();
+}
 
-    unsigned long xorshift32() {
-        static unsigned long state = static_cast<unsigned long>(std::time(NULL))
-            & 0xFFFFFFFF;
-        state ^= (state << 13);
-        state &= 0xFFFFFFFF;
-        state ^= (state >> 17);
-        state &= 0xFFFFFFFF;
-        state ^= (state << 5);
-        state &= 0xFFFFFFFF;
-        return state;
-    }
+unsigned long xorshift32() {
+    static unsigned long state = static_cast<unsigned long>(std::time(NULL))
+        & 0xFFFFFFFF;
+    state ^= (state << 13);
+    state &= 0xFFFFFFFF;
+    state ^= (state >> 17);
+    state &= 0xFFFFFFFF;
+    state ^= (state << 5);
+    state &= 0xFFFFFFFF;
+    return state;
+}
 }
