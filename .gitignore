@@ -1,9 +1,0 @@
-.vscode
-*.o
-*.log
-*.txt
-
-# Executable files
-dynamic_cast
-Serializer
-ScalarConverter
